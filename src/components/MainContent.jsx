@@ -464,7 +464,7 @@ const MainContent = () => {
         {/* Footer */}
         <footer className="pt-8 border-t border-gray-200 dark:border-gray-800">
           <p className="text-sm text-mutedText dark:text-gray-400 font-inter text-center">
-            © {new Date().getFullYear()} {config.personal.name}. Built with React & Tailwind CSS.
+            © {new Date().getFullYear()} {config.personal.name}
           </p>
         </footer>
       </div>

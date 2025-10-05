@@ -88,7 +88,7 @@ const Footer = () => {
           {/* Bottom Footer */}
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-gray-300 font-inter text-sm text-center md:text-left">
-              © {currentYear} {config.personal.name} | Built with ❤️ using React
+              © {currentYear} {config.personal.name}
             </p>
             
             <button

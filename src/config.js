@@ -10,7 +10,7 @@ export const config = {
     description: "Passionate about transforming raw data into actionable insights. I love exploring data patterns, building analytical solutions, and creating visual stories that drive decision-making. Currently seeking opportunities to apply my skills in real-world data challenges.",
     email: "aryankrsingh987@gmail.com",
     phone: "+91 9798597633",
-    location: "Vellore, India",
+    location: "Hyderabad, India",
     resumeUrl: "/AryanKumarSingh_Resume.pdf", // Update this path when you add your resume
   },
 
