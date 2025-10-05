@@ -7,7 +7,7 @@ export const config = {
     name: "Aryan Kumar Singh",
     tagline: "Aspiring Data Engineer | Analyst",
     subtitle: "Final Year BTech CSE Student at VIT Vellore",
-    description: "Passionate about transforming raw data into actionable insights. I love exploring data patterns, building analytical solutions, and creating visual stories that drive decision-making. Currently seeking opportunities to apply my skills in real-world data challenges.",
+    description: "A curious CS student who believes data tells better stories than most people do — you just need to know how to listen. I’m passionate about turning messy data into meaningful insights and building solutions that make both users and dashboards happy. With hands-on experience in backend development using Python (FastAPI) and Java, I’ve learned the art of designing, coding, and debugging (and occasionally talking to my code until it cooperates). I thrive in agile teams, enjoy solving real-world problems, and am on a mission to blend logic, creativity, and a dash of humor into every project I take on.",
     email: "aryankrsingh987@gmail.com",
     phone: "+91 9798597633",
     location: "Hyderabad, India",
@@ -68,14 +68,14 @@ export const config = {
   // Experience from resume
   experience: [
     {
-      title: "Data Analyst Intern",
-      company: "Intern Crowd",
-      duration: "June 2024 - August 2024",
-      location: "Remote",
+      title: "Software Engineer Intern",
+      company: "Innovatech Technology Solutions Pvt Ltd",
+      duration: "May 2025 - July 2025",
+      location: "Hyderabad, Telangana (Onsite)",
       achievements: [
-        "Analyzed complex datasets to identify trends and patterns",
-        "Created interactive dashboards using Power BI and Tableau",
-        "Collaborated with cross-functional teams to deliver data-driven insights",
+        "Gained exposure to the SDLC principles working with the backend team, using FastAPI (Python) Framework, building RESTful APIs.",
+        "Collaborated with a lively team of developers using Git and Jira in an agile setup, taking part in stand-ups, sprint planning, and code reviews.",
+        "Tested and refined APIs through Postman, ensuring everything ran smoothly.",
       ],
     },
   ],
