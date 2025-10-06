@@ -11,7 +11,7 @@ export const config = {
     email: "aryankrsingh987@gmail.com",
     phone: "+91 9798597633",
     location: "Hyderabad, India",
-    resumeUrl: "https://drive.google.com/file/d/17U7ZFZ5jykoo18LoAjG9QPof8ZetrMrh/view",
+    resumeUrl: "https://drive.google.com/file/d/17U7ZFZ5jykoo18LoAjG9QPof8ZetrMrh/view?usp=sharing",
   },
 
   // Social Links
