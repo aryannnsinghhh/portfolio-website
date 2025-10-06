@@ -1,5 +1,7 @@
 # Portfolio Website - Aryan Kumar Singh
 
+**Live Site:** [Portfolio-Website](https://aryannnsinghhh.vercel.app/)
+
 ## About Me
 
 Hey there! I'm Aryan, a final-year BTech CSE student at VIT Vellore who believes data tells better stories than most people do—you just need to know how to listen. 
@@ -61,6 +63,6 @@ portfolio-website/
 ## Get In Touch
 
 - Email: [aryankrsingh987@gmail.com](mailto:aryankrsingh987@gmail.com)
-- LinkedIn: [Aryan Singh](https://www.linkedin.com/in/aryan-singh-11x11y2515/)
+- LinkedIn: [Aryan Kumar Singh](https://www.linkedin.com/in/aryan-singh-11x11y2515/)
 - GitHub: [@aryannnsinghhh](https://github.com/aryannnsinghhh)
 - Phone: +91 9798597633
