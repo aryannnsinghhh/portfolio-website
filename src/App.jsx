@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import Sidebar from './components/Sidebar';
 import MainContent from './components/MainContent';
-import ThemeToggle from './components/ThemeToggle';
+import ButtonBar from './components/ButtonBar';
 import './App.css';
 
 function App() {
@@ -12,9 +12,9 @@ function App() {
 
   return (
     <div className="App flex">
-      <ThemeToggle />
       <Sidebar />
       <MainContent />
+      <ButtonBar />
     </div>
   );
 }

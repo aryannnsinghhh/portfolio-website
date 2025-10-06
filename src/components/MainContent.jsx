@@ -2,11 +2,13 @@ import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef, useState, useEffect } from 'react';
 import { config } from '../config';
+import { useTheme } from '../context/ThemeContext';
 
 const MainContent = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
   const [showScrollTop, setShowScrollTop] = useState(false);
+  const { isDark, toggleTheme } = useTheme();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -22,9 +24,9 @@ const MainContent = () => {
   };
 
   return (
-    <main className="lg:ml-96 min-h-screen bg-gradient-to-br from-gray-50 via-blue-50/30 to-gray-50 dark:from-gray-950 dark:via-gray-900 dark:to-gray-950 relative overflow-hidden transition-colors duration-300">
+    <main className="lg:ml-96 lg:mr-20 min-h-screen bg-gradient-to-br from-gray-50 via-blue-50/30 to-gray-50 dark:from-gray-950 dark:via-gray-900 dark:to-gray-950 relative overflow-hidden transition-colors duration-300">
       {/* Decorative Background Elements - Fixed Position */}
-      <div className="fixed inset-0 overflow-hidden pointer-events-none z-0 lg:ml-96">
+      <div className="fixed inset-0 overflow-hidden pointer-events-none z-0 lg:ml-96 lg:mr-20">
         {/* Small scattered geometric shapes across the page */}
         
         {/* Top Section */}
@@ -195,7 +197,7 @@ const MainContent = () => {
         </div>
       </div>
 
-      <div className="max-w-4xl mx-auto px-6 py-12 lg:px-12 lg:py-16 relative z-10">
+      <div className="w-full mx-auto px-6 py-12 lg:px-12 lg:py-16 relative z-10">
         
         {/* Mobile Header */}
         <motion.div
@@ -289,7 +291,7 @@ const MainContent = () => {
 
           {/* Mobile Contact Info */}
           <div className="space-y-3 mb-6 pb-6 border-b border-gray-200 dark:border-gray-800">
-            <div className="flex items-center gap-3 text-sm">
+            <div className="flex items-center justify-center gap-3 text-sm">
               <svg className="w-4 h-4 text-mutedText dark:text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
               </svg>
@@ -297,7 +299,7 @@ const MainContent = () => {
                 {config.personal.email}
               </a>
             </div>
-            <div className="flex items-center gap-3 text-sm">
+            <div className="flex items-center justify-center gap-3 text-sm">
               <svg className="w-4 h-4 text-mutedText dark:text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
               </svg>
@@ -551,14 +553,56 @@ const MainContent = () => {
         </footer>
       </div>
 
-      {/* Scroll to Top Button */}
+      {/* Theme Toggle Button - Mobile Only */}
+      <motion.button
+        onClick={toggleTheme}
+        className="lg:hidden fixed top-8 right-8 z-50 w-12 h-12 rounded-full bg-white dark:bg-gray-800 shadow-lg border-2 border-gray-200 dark:border-gray-700 flex items-center justify-center transition-all duration-300 hover:scale-110"
+        whileHover={{ scale: 1.1 }}
+        whileTap={{ scale: 0.95 }}
+        aria-label="Toggle theme"
+      >
+        {isDark ? (
+          // Sun icon for light mode
+          <motion.svg
+            key="sun"
+            initial={{ rotate: -90, opacity: 0 }}
+            animate={{ rotate: 0, opacity: 1 }}
+            exit={{ rotate: 90, opacity: 0 }}
+            transition={{ duration: 0.3 }}
+            className="w-5 h-5 text-yellow-500"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <circle cx="12" cy="12" r="4" strokeWidth="2" />
+            <path strokeLinecap="round" strokeWidth="2" d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41" />
+          </motion.svg>
+        ) : (
+          // Moon icon for dark mode
+          <motion.svg
+            key="moon"
+            initial={{ rotate: 90, opacity: 0 }}
+            animate={{ rotate: 0, opacity: 1 }}
+            exit={{ rotate: -90, opacity: 0 }}
+            transition={{ duration: 0.3 }}
+            className="w-5 h-5 text-indigo-600"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+          </motion.svg>
+        )}
+      </motion.button>
+
+      {/* Scroll to Top Button - Mobile Only */}
       {showScrollTop && (
         <motion.button
           initial={{ opacity: 0, scale: 0 }}
           animate={{ opacity: 1, scale: 1 }}
           exit={{ opacity: 0, scale: 0 }}
           onClick={scrollToTop}
-          className="fixed bottom-8 right-8 z-50 w-12 h-12 bg-white dark:bg-gray-800 border-2 border-gray-200 dark:border-gray-700 text-darkText dark:text-gray-300 rounded-full shadow-lg flex items-center justify-center transition-all duration-300 hover:border-primary hover:text-primary dark:hover:border-primary dark:hover:text-primary hover:shadow-xl"
+          className="lg:hidden fixed bottom-8 right-8 z-50 w-12 h-12 bg-white dark:bg-gray-800 border-2 border-gray-200 dark:border-gray-700 text-darkText dark:text-gray-300 rounded-full shadow-lg flex items-center justify-center transition-all duration-300 hover:border-primary hover:text-primary dark:hover:border-primary dark:hover:text-primary hover:shadow-xl"
           aria-label="Scroll to top"
         >
           <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">

@@ -5,7 +5,7 @@ export const config = {
   // Personal Information
   personal: {
     name: "Aryan Kumar Singh",
-    tagline: "Aspiring Data Engineer | Analyst",
+    tagline: "Data Engineer | Analyst",
     subtitle: "Final Year BTech CSE Student at VIT Vellore",
     description: "A curious CS student who believes data tells better stories than most people do, you just need to know how to listen. I’m passionate about turning messy data into meaningful insights and building solutions that make both users and dashboards happy. With hands-on experience in backend development using Python (FastAPI) and Java, I’ve learned the art of designing, coding, and debugging (and occasionally talking to my code until it cooperates). I thrive in agile teams, enjoy solving real-world problems, and am on a mission to blend logic, creativity, and a dash of humor into every project I take on.",
     email: "aryankrsingh987@gmail.com",
