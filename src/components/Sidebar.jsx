@@ -108,7 +108,7 @@ const Sidebar = () => {
             Skills
           </button>
           <a
-            href="https://drive.google.com/file/d/19SnfUNNHYeAV3TxTgz1IvR1hnCN2z8bm/view?usp=sharing"
+            href="https://drive.google.com/file/d/17U7ZFZ5jykoo18LoAjG9QPof8ZetrMrh/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             className="px-4 py-2.5 bg-white dark:bg-gray-800 border-2 border-gray-200 dark:border-gray-700 rounded-xl text-darkText dark:text-gray-300 font-inter font-medium hover:border-primary hover:text-primary dark:hover:border-primary dark:hover:text-primary transition-all duration-300 shadow-sm text-sm text-center"
