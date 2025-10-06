@@ -280,7 +280,7 @@ const MainContent = () => {
               Skills
             </button>
             <a
-              href="https://drive.google.com/file/d/19SnfUNNHYeAV3TxTgz1IvR1hnCN2z8bm/view?usp=sharing"
+              href="https://drive.google.com/file/d/17U7ZFZ5jykoo18LoAjG9QPof8ZetrMrh/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               className="px-4 py-2.5 bg-white dark:bg-gray-800 text-darkText dark:text-gray-300 border border-gray-200 dark:border-gray-700 rounded-lg font-inter text-sm font-medium hover:border-primary hover:text-primary dark:hover:border-primary dark:hover:text-primary transition-all text-center"
