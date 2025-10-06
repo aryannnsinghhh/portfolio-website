@@ -72,6 +72,7 @@ export const config = {
       company: "Innovatech Technology Solutions Pvt Ltd",
       duration: "May 2025 - July 2025",
       location: "Hyderabad, Telangana (Onsite)",
+      link: "https://drive.google.com/file/d/1YvGJGSMxY5ahQ6R5SGqmrJ_cOg4Tv09d/view",
       achievements: [
         "Gained exposure to the SDLC principles working with the backend team, using FastAPI (Python) Framework, building RESTful APIs.",
         "Collaborated with a lively team of developers using Git and Jira in an agile setup, taking part in stand-ups, sprint planning, and code reviews.",
@@ -87,40 +88,39 @@ export const config = {
       institution: "Vellore Institute of Technology (VIT)",
       duration: "2022 - 2026",
       location: "Vellore, Tamil Nadu",
-      details: "Specialization in Data Science and Analytics",
     },
     {
-      degree: "Senior Secondary (XII)",
-      institution: "Delhi Public School",
-      duration: "2021",
-      location: "Delhi",
-      details: "Science Stream - 92%",
+      degree: "Schooling (X & XII)",
+      institution: "Open Minds - A Birla School, Kankarbagh",
+      duration: "2019 & 2021",
+      location: "Patna, Bihar",
+      details: "CBSE Board",
     },
   ],
 
   // Projects - You can add your projects here later
   projects: [
     {
-      title: "Sales Analytics Dashboard",
-      description: "Interactive Power BI dashboard analyzing sales trends, customer behavior, and revenue patterns across multiple regions.",
-      technologies: ["Power BI", "SQL", "Excel", "DAX"],
-      githubUrl: "#",
+      title: "Marketing Performance & Customer Insights Dashboard",
+      description: "Built a data pipeline using SQL Server, Python, and Power BI to analyze customer reviews and marketing performance. Applied VADER sentiment analysis with NLTK to categorize customer feedback. Designed an interactive dashboard that helps marketing teams uncover trends, measure performance, and make data-driven decisions.",
+      technologies: ["Power BI", "SQL Server", "Python", "DAX", "NLTK", "VADER"],
+      githubUrl: "https://github.com/aryannnsinghhh/Marketing-Analytics",
       liveUrl: "#",
       image: "/project1.jpg", // Add project images later
     },
     {
-      title: "Customer Segmentation Analysis",
-      description: "Machine learning project using K-means clustering to segment customers based on purchasing behavior and demographics.",
-      technologies: ["Python", "Pandas", "Scikit-learn", "Matplotlib"],
-      githubUrl: "#",
+      title: "Sentiment Analysis Using Python",
+      description: "Created a sentiment analysis model in Python to classify tweets as positive or negative using NLTK and Scikit-learn. Implemented data cleaning, text preprocessing, and TF-IDF vectorization before training a Logistic Regression model for sentiment prediction. The project demonstrates strong data handling, NLP, and machine learning integration for real-world text analytics.",
+      technologies: ["Python", "Pandas", "NLTK", "Scikit-learn", "TF-IDF", "Logistic Regression"],
+      githubUrl: "https://github.com/aryannnsinghhh/Sentiment-Analysis-Using-Py",
       liveUrl: "#",
       image: "/project2.jpg",
     },
     {
-      title: "Data Pipeline ETL System",
-      description: "Built an automated ETL pipeline to extract, transform, and load data from multiple sources into a centralized database.",
-      technologies: ["Python", "SQL", "PostgreSQL", "Apache Airflow"],
-      githubUrl: "#",
+      title: "Master Chef",
+      description: "Developed an AI-powered recipe generator using React, TailwindCSS, and Hugging Face's Mistral-7B model that crafts personalized recipes from user ingredients. Designed a clean, responsive interface adaptable across all devices, integrated real-time API calls for instant recipe generation, and added ingredient management features.",
+      technologies: ["React", "TailwindCSS", "Hugging Face's Mistral-7B model", "API Integration"],
+      githubUrl: "https://github.com/aryannnsinghhh/Master-Chef",
       liveUrl: "#",
       image: "/project3.jpg",
     },
@@ -128,9 +128,18 @@ export const config = {
 
   // Certifications & Achievements
   certifications: [
-    "Google Data Analytics Professional Certificate",
-    "Microsoft Power BI Data Analyst Associate",
-    "SQL for Data Science - Coursera",
+    {
+      name: "OCI 2025 AI Foundations Associate",
+      link: "https://drive.google.com/file/d/1VKwy2aO9Vfwddt-SMkW570uM_pVTmwpJ/view"
+    },
+    {
+      name: "Microsoft Azure Data Fundamentals",
+      link: "https://drive.google.com/file/d/1FjcYlksgnSlnPCm4cxCUvSOg2q8eoJ4G/view"
+    },
+    {
+      name: "AWS Certified Cloud Practitioner",
+      link: "https://drive.google.com/file/d/1Tyb_KjKRoQ5RPwazbIgIcaDJDsfgScIz/view"
+    },
   ],
 };
 

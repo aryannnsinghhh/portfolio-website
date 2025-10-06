@@ -320,9 +320,22 @@ const MainContent = () => {
                 <p className="text-base font-semibold text-primary dark:text-blue-400 mb-2 font-inter">
                   {exp.title} • {exp.location} • {exp.duration}
                 </p>
-                <p className="text-mutedText dark:text-gray-400 font-inter leading-relaxed">
+                <p className="text-mutedText dark:text-gray-400 font-inter leading-relaxed mb-4">
                   {exp.achievements.join(' ')}
                 </p>
+                {exp.link && (
+                  <a
+                    href={exp.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 text-primary dark:text-blue-400 hover:text-primary/80 dark:hover:text-blue-300 transition-colors font-inter text-sm font-medium"
+                  >
+                    View Certificate
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                    </svg>
+                  </a>
+                )}
               </motion.div>
             ))}
           </div>
@@ -458,6 +471,47 @@ const MainContent = () => {
                 )}
               </motion.div>
             ))}
+          </div>
+        </motion.section>
+
+        {/* Certifications Section */}
+        <motion.section
+          id="certifications"
+          initial={{ opacity: 0, y: 30 }}
+          animate={isInView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.6, delay: 1.2 }}
+          className="mb-16"
+        >
+          <h3 className="text-2xl font-bold font-poppins text-darkText dark:text-white mb-8">
+            Certifications
+          </h3>
+          <div className="bg-white dark:bg-gray-800 rounded-2xl p-6 border border-gray-200 dark:border-gray-700">
+            <ul className="space-y-3">
+              {config.certifications.map((cert, idx) => (
+                <motion.li
+                  key={idx}
+                  initial={{ opacity: 0, x: -20 }}
+                  animate={isInView ? { opacity: 1, x: 0 } : {}}
+                  transition={{ duration: 0.4, delay: 1.3 + idx * 0.1 }}
+                  className="flex items-start gap-3"
+                >
+                  <svg className="w-5 h-5 text-primary dark:text-blue-400 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                  </svg>
+                  <a 
+                    href={cert.link} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-mutedText dark:text-gray-300 font-inter hover:text-primary dark:hover:text-blue-400 transition-colors flex items-center gap-2 group"
+                  >
+                    <span>{cert.name}</span>
+                    <svg className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                    </svg>
+                  </a>
+                </motion.li>
+              ))}
+            </ul>
           </div>
         </motion.section>
 
