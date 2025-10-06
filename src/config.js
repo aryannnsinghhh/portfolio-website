@@ -7,11 +7,11 @@ export const config = {
     name: "Aryan Kumar Singh",
     tagline: "Aspiring Data Engineer | Analyst",
     subtitle: "Final Year BTech CSE Student at VIT Vellore",
-    description: "A curious CS student who believes data tells better stories than most people do — you just need to know how to listen. I’m passionate about turning messy data into meaningful insights and building solutions that make both users and dashboards happy. With hands-on experience in backend development using Python (FastAPI) and Java, I’ve learned the art of designing, coding, and debugging (and occasionally talking to my code until it cooperates). I thrive in agile teams, enjoy solving real-world problems, and am on a mission to blend logic, creativity, and a dash of humor into every project I take on.",
+    description: "A curious CS student who believes data tells better stories than most people do, you just need to know how to listen. I’m passionate about turning messy data into meaningful insights and building solutions that make both users and dashboards happy. With hands-on experience in backend development using Python (FastAPI) and Java, I’ve learned the art of designing, coding, and debugging (and occasionally talking to my code until it cooperates). I thrive in agile teams, enjoy solving real-world problems, and am on a mission to blend logic, creativity, and a dash of humor into every project I take on.",
     email: "aryankrsingh987@gmail.com",
     phone: "+91 9798597633",
     location: "Hyderabad, India",
-    resumeUrl: "/AryanKumarSingh_Resume.pdf", // Update this path when you add your resume
+    resumeUrl: "https://drive.google.com/file/d/19SnfUNNHYeAV3TxTgz1IvR1hnCN2z8bm/view?usp=sharing",
   },
 
   // Social Links
@@ -65,7 +65,7 @@ export const config = {
     ],
   },
 
-  // Experience from resume
+  // Experience
   experience: [
     {
       title: "Software Engineer Intern",
@@ -81,7 +81,7 @@ export const config = {
     },
   ],
 
-  // Education from resume
+  // Education
   education: [
     {
       degree: "Bachelor of Technology in Computer Science",
