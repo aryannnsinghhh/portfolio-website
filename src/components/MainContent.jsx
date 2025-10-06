@@ -302,7 +302,7 @@ const MainContent = () => {
           <h2 className="text-4xl md:text-5xl font-bold font-poppins text-darkText dark:text-white mb-6">
             Hey, I'm {config.personal.name.split(' ')[0]}
           </h2>
-          <p className="text-lg font-inter text-mutedText dark:text-gray-400 leading-relaxed">
+          <p className="text-lg font-inter text-mutedText dark:text-gray-400 leading-relaxed text-justify">
             {config.personal.description}
           </p>
         </motion.div>
@@ -334,7 +334,7 @@ const MainContent = () => {
                 <p className="text-base font-semibold text-primary dark:text-blue-400 mb-2 font-inter">
                   {exp.title} • {exp.location} • {exp.duration}
                 </p>
-                <p className="text-mutedText dark:text-gray-400 font-inter leading-relaxed mb-4">
+                <p className="text-mutedText dark:text-gray-400 font-inter leading-relaxed text-justify mb-4">
                   {exp.achievements.join(' ')}
                 </p>
                 {exp.link && (
@@ -381,7 +381,7 @@ const MainContent = () => {
                 <p className="text-sm font-semibold text-mutedText dark:text-gray-400 mb-3 font-inter">
                   {project.technologies.join(' • ')}
                 </p>
-                <p className="text-mutedText dark:text-gray-400 font-inter leading-relaxed mb-4">
+                <p className="text-mutedText dark:text-gray-400 font-inter leading-relaxed text-justify mb-4">
                   {project.description}
                 </p>
                 <div className="flex gap-3">
@@ -505,20 +505,20 @@ const MainContent = () => {
           transition={{ duration: 0.6, delay: 0.8 }}
           className="mb-16"
         >
-          <h3 className="text-2xl font-bold font-poppins text-darkText dark:text-white mb-8">
+          <h3 className="text-2xl font-bold font-poppins text-darkText dark:text-white mb-6">
             Skills & Technologies
           </h3>
-          <div className="bg-white dark:bg-gray-800 rounded-2xl p-6 border border-gray-200 dark:border-gray-700">
+          <div className="bg-white dark:bg-gray-800 rounded-2xl p-5 border border-gray-200 dark:border-gray-700">
             {Object.entries(config.skills).map(([category, skillList], idx) => (
-              <div key={category} className={idx !== 0 ? 'mt-6 pt-6 border-t border-gray-100 dark:border-gray-700' : ''}>
-                <h4 className="text-base font-bold font-poppins text-darkText dark:text-white mb-3">
+              <div key={category} className={idx !== 0 ? 'mt-3 pt-3 border-t border-gray-100 dark:border-gray-700' : ''}>
+                <h4 className="text-sm font-bold font-poppins text-darkText dark:text-white mb-1.5">
                   {category}
                 </h4>
                 <div className="flex flex-wrap gap-2">
                   {skillList.map((skill) => (
                     <span
                       key={skill.name}
-                      className="px-3 py-1.5 bg-gray-50 dark:bg-gray-700 text-mutedText dark:text-gray-300 text-sm font-inter rounded-lg border border-gray-200 dark:border-gray-600 hover:border-primary/30 dark:hover:border-primary/50 hover:bg-primary/5 dark:hover:bg-primary/10 transition-all"
+                      className="px-2.5 py-1 bg-gray-50 dark:bg-gray-700 text-mutedText dark:text-gray-300 text-sm font-inter rounded-lg border border-gray-200 dark:border-gray-600 hover:border-primary/30 dark:hover:border-primary/50 hover:bg-primary/5 dark:hover:bg-primary/10 transition-all"
                     >
                       {skill.name}
                     </span>
