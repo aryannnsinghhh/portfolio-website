@@ -246,16 +246,22 @@ const MainContent = () => {
               Projects
             </button>
             <button
-              onClick={() => document.getElementById('skills')?.scrollIntoView({ behavior: 'smooth' })}
-              className="px-4 py-2.5 bg-white dark:bg-gray-800 text-darkText dark:text-gray-300 border border-gray-200 dark:border-gray-700 rounded-lg font-inter text-sm font-medium hover:border-primary hover:text-primary dark:hover:border-primary dark:hover:text-primary transition-all"
-            >
-              Skills
-            </button>
-            <button
               onClick={() => document.getElementById('education')?.scrollIntoView({ behavior: 'smooth' })}
               className="px-4 py-2.5 bg-white dark:bg-gray-800 text-darkText dark:text-gray-300 border border-gray-200 dark:border-gray-700 rounded-lg font-inter text-sm font-medium hover:border-primary hover:text-primary dark:hover:border-primary dark:hover:text-primary transition-all"
             >
               Education
+            </button>
+            <button
+              onClick={() => document.getElementById('certifications')?.scrollIntoView({ behavior: 'smooth' })}
+              className="px-4 py-2.5 bg-white dark:bg-gray-800 text-darkText dark:text-gray-300 border border-gray-200 dark:border-gray-700 rounded-lg font-inter text-sm font-medium hover:border-primary hover:text-primary dark:hover:border-primary dark:hover:text-primary transition-all"
+            >
+              Certifications
+            </button>
+            <button
+              onClick={() => document.getElementById('skills')?.scrollIntoView({ behavior: 'smooth' })}
+              className="px-4 py-2.5 bg-white dark:bg-gray-800 text-darkText dark:text-gray-300 border border-gray-200 dark:border-gray-700 rounded-lg font-inter text-sm font-medium hover:border-primary hover:text-primary dark:hover:border-primary dark:hover:text-primary transition-all"
+            >
+              Skills
             </button>
           </div>
 
@@ -403,38 +409,6 @@ const MainContent = () => {
           </div>
         </motion.section>
 
-        {/* Skills Section */}
-        <motion.section
-          id="skills"
-          initial={{ opacity: 0, y: 30 }}
-          animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.6, delay: 0.8 }}
-          className="mb-16"
-        >
-          <h3 className="text-2xl font-bold font-poppins text-darkText dark:text-white mb-8">
-            Skills & Technologies
-          </h3>
-          <div className="bg-white dark:bg-gray-800 rounded-2xl p-6 border border-gray-200 dark:border-gray-700">
-            {Object.entries(config.skills).map(([category, skillList], idx) => (
-              <div key={category} className={idx !== 0 ? 'mt-6 pt-6 border-t border-gray-100 dark:border-gray-700' : ''}>
-                <h4 className="text-base font-bold font-poppins text-darkText dark:text-white mb-3">
-                  {category}
-                </h4>
-                <div className="flex flex-wrap gap-2">
-                  {skillList.map((skill) => (
-                    <span
-                      key={skill.name}
-                      className="px-3 py-1.5 bg-gray-50 dark:bg-gray-700 text-mutedText dark:text-gray-300 text-sm font-inter rounded-lg border border-gray-200 dark:border-gray-600 hover:border-primary/30 dark:hover:border-primary/50 hover:bg-primary/5 dark:hover:bg-primary/10 transition-all"
-                    >
-                      {skill.name}
-                    </span>
-                  ))}
-                </div>
-              </div>
-            ))}
-          </div>
-        </motion.section>
-
         {/* Education Section */}
         <motion.section
           id="education"
@@ -512,6 +486,38 @@ const MainContent = () => {
                 </motion.li>
               ))}
             </ul>
+          </div>
+        </motion.section>
+
+        {/* Skills Section */}
+        <motion.section
+          id="skills"
+          initial={{ opacity: 0, y: 30 }}
+          animate={isInView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.6, delay: 0.8 }}
+          className="mb-16"
+        >
+          <h3 className="text-2xl font-bold font-poppins text-darkText dark:text-white mb-8">
+            Skills & Technologies
+          </h3>
+          <div className="bg-white dark:bg-gray-800 rounded-2xl p-6 border border-gray-200 dark:border-gray-700">
+            {Object.entries(config.skills).map(([category, skillList], idx) => (
+              <div key={category} className={idx !== 0 ? 'mt-6 pt-6 border-t border-gray-100 dark:border-gray-700' : ''}>
+                <h4 className="text-base font-bold font-poppins text-darkText dark:text-white mb-3">
+                  {category}
+                </h4>
+                <div className="flex flex-wrap gap-2">
+                  {skillList.map((skill) => (
+                    <span
+                      key={skill.name}
+                      className="px-3 py-1.5 bg-gray-50 dark:bg-gray-700 text-mutedText dark:text-gray-300 text-sm font-inter rounded-lg border border-gray-200 dark:border-gray-600 hover:border-primary/30 dark:hover:border-primary/50 hover:bg-primary/5 dark:hover:bg-primary/10 transition-all"
+                    >
+                      {skill.name}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            ))}
           </div>
         </motion.section>
 

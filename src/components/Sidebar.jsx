@@ -88,16 +88,22 @@ const Sidebar = () => {
             Projects
           </button>
           <button
-            onClick={() => document.getElementById('skills')?.scrollIntoView({ behavior: 'smooth' })}
-            className="px-4 py-2.5 bg-white dark:bg-gray-800 border-2 border-gray-200 dark:border-gray-700 rounded-xl text-darkText dark:text-gray-300 font-inter font-medium hover:border-primary hover:text-primary dark:hover:border-primary dark:hover:text-primary transition-all duration-300 shadow-sm text-sm"
-          >
-            Skills
-          </button>
-          <button
             onClick={() => document.getElementById('education')?.scrollIntoView({ behavior: 'smooth' })}
             className="px-4 py-2.5 bg-white dark:bg-gray-800 border-2 border-gray-200 dark:border-gray-700 rounded-xl text-darkText dark:text-gray-300 font-inter font-medium hover:border-primary hover:text-primary dark:hover:border-primary dark:hover:text-primary transition-all duration-300 shadow-sm text-sm"
           >
             Education
+          </button>
+          <button
+            onClick={() => document.getElementById('certifications')?.scrollIntoView({ behavior: 'smooth' })}
+            className="px-4 py-2.5 bg-white dark:bg-gray-800 border-2 border-gray-200 dark:border-gray-700 rounded-xl text-darkText dark:text-gray-300 font-inter font-medium hover:border-primary hover:text-primary dark:hover:border-primary dark:hover:text-primary transition-all duration-300 shadow-sm text-sm"
+          >
+            Certifications
+          </button>
+          <button
+            onClick={() => document.getElementById('skills')?.scrollIntoView({ behavior: 'smooth' })}
+            className="px-4 py-2.5 bg-white dark:bg-gray-800 border-2 border-gray-200 dark:border-gray-700 rounded-xl text-darkText dark:text-gray-300 font-inter font-medium hover:border-primary hover:text-primary dark:hover:border-primary dark:hover:text-primary transition-all duration-300 shadow-sm text-sm"
+          >
+            Skills
           </button>
         </div>
       </div>
