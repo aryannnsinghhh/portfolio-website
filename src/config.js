@@ -5,13 +5,13 @@ export const config = {
   // Personal Information
   personal: {
     name: "Aryan Kumar Singh",
-    tagline: "Data Engineer | Analyst",
+    tagline: "Backend | Data | AI | Python | Java",
     subtitle: "Final Year BTech CSE Student at VIT Vellore",
     description: "A curious CS student who believes data tells better stories than most people do, you just need to know how to listen. I’m passionate about turning messy data into meaningful insights and building solutions that make both users and dashboards happy. With hands-on experience in backend development using Python (FastAPI) and Java, I’ve learned the art of designing, coding, and debugging (and occasionally talking to my code until it cooperates). I thrive in agile teams, enjoy solving real-world problems, and am on a mission to blend logic, creativity, and a dash of humor into every project I take on.",
     email: "aryankrsingh987@gmail.com",
     phone: "+91 9798597633",
-    location: "Hyderabad, India",
-    resumeUrl: "https://drive.google.com/file/d/17U7ZFZ5jykoo18LoAjG9QPof8ZetrMrh/view?usp=sharing",
+    location: "Vellore, India",
+    resumeUrl: "https://drive.google.com/file/d/1afsnUMhsE6-0pHWBDb8QZewcD6oGSa0j/view?usp=sharing",
   },
 
   // Social Links
@@ -110,29 +110,56 @@ export const config = {
     },
   ],
 
-  // Projects - You can add your projects here later
+  // Projects
   projects: [
     {
-      title: "Marketing Performance & Customer Insights Dashboard",
-      description: "Built a data pipeline using SQL Server, Python, and Power BI to analyze customer reviews and marketing performance. Applied VADER sentiment analysis with NLTK to categorize customer feedback. Designed an interactive dashboard that helps marketing teams uncover trends, measure performance, and make data-driven decisions.",
-      technologies: ["Power BI", "SQL Server", "Python", "DAX", "NLTK", "VADER"],
-      githubUrl: "https://github.com/aryannnsinghhh/Marketing-Analytics",
+      title: "PsyFi – Behavioral Finance Coach",
+      description:
+        "Built an ML pipeline for financial transaction analysis with data preprocessing, 6 ML models (90%+ accuracy), and LSTM forecasting. Processed 92k+ transactions using Pandas and developed REST APIs with FastAPI integrating Gemini API for personalized finance insights.",
+      technologies: [
+        "Python",
+        "LSTM",
+        "FastAPI",
+        "Scikit-learn",
+        "React.js",
+        "Gemini API",
+        "Pandas"
+      ],
+      githubUrl: "https://github.com/aryannnsinghhh/PsiFy",
       liveUrl: "#",
-      image: "/project1.jpg", // Add project images later
+      image: "/project1.jpg",
     },
     {
-      title: "Sentiment Analysis Using Python",
-      description: "Created a sentiment analysis model in Python to classify tweets as positive or negative using NLTK and Scikit-learn. Implemented data cleaning, text preprocessing, and TF-IDF vectorization before training a Logistic Regression model for sentiment prediction. The project demonstrates strong data handling, NLP, and machine learning integration for real-world text analytics.",
-      technologies: ["Python", "Pandas", "NLTK", "Scikit-learn", "TF-IDF", "Logistic Regression"],
-      githubUrl: "https://github.com/aryannnsinghhh/Sentiment-Analysis-Using-Py",
+      title: "Marketing Analysis Dashboard",
+      description:
+        "Engineered a marketing analytics pipeline using SQL Server, Python, and Power BI. Cleaned data using SQL CTEs, analyzed 1300+ customer reviews with Python, and built an interactive Power BI dashboard with DAX calendar tables for time-based insights.",
+      technologies: [
+        "SQL",
+        "SQL Server",
+        "Python",
+        "Pandas",
+        "Power BI",
+        "DAX"
+      ],
+      githubUrl: "https://github.com/aryannnsinghhh/Marketing-Analytics",
       liveUrl: "#",
       image: "/project2.jpg",
     },
     {
-      title: "Master Chef",
-      description: "Developed an AI-powered recipe generator using React, TailwindCSS, and Hugging Face's Mistral-7B model that crafts personalized recipes from user ingredients. Designed a clean, responsive interface adaptable across all devices, integrated real-time API calls for instant recipe generation, and added ingredient management features.",
-      technologies: ["React", "TailwindCSS", "Hugging Face's Mistral-7B model", "API Integration"],
-      githubUrl: "https://github.com/aryannnsinghhh/Master-Chef",
+      title: "ResumeWise – Smart Resume Screener",
+      description:
+        "Built a full-stack AI resume screener with FastAPI backend and React-TypeScript frontend. Implemented MongoDB session handling for 500+ users, secure JWT authentication across 10+ APIs, and Gemini 2.0 integration for resume-job match scoring.",
+      technologies: [
+        "Python",
+        "FastAPI",
+        "React.js",
+        "TypeScript",
+        "MongoDB",
+        "Gemini API",
+        "JWT",
+        "Tailwind CSS"
+      ],
+      githubUrl: "https://github.com/aryannnsinghhh/ResumeWise",
       liveUrl: "#",
       image: "/project3.jpg",
     },
