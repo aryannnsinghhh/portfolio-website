@@ -15,7 +15,7 @@ const Sidebar = () => {
       <div className="flex flex-col items-center text-center">
         <div className="w-full aspect-square rounded-3xl overflow-hidden mb-3 shadow-lg max-w-[160px]">
           <img 
-            src="/profile.png" 
+            src="/profile2.png" 
             alt={config.personal.name}
             className="w-full h-full object-cover"
           />

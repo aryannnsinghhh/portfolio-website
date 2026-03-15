@@ -207,9 +207,9 @@ const MainContent = () => {
           className="lg:hidden mb-12"
         >
           <div className="flex flex-col items-center text-center mb-6">
-            <div className="w-32 h-32 rounded-3xl overflow-hidden shadow-lg mb-4">
+            <div className="w-36 h-36 rounded-3xl overflow-hidden shadow-lg mb-4">
               <img 
-                src="/profile.png" 
+                src="/profile2.png" 
                 alt={config.personal.name}
                 className="w-full h-full object-cover"
               />
